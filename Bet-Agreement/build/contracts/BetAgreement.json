@@ -1,0 +1,1098 @@
+{
+  "contractName": "BetAgreement",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "organizer",
+      "outputs": [
+        {
+          "name": "adr",
+          "type": "address"
+        },
+        {
+          "name": "commission",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "people_count",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "position_price",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "name": "bet_log",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "max_people",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "bet_price",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "_commission",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506040516020806103578339810180604052810190808051906020019092919050505060408051908101604052803373ffffffffffffffffffffffffffffffffffffffff168152602001828152506000808201518160000160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055506020820151816001015590505050610294806100c36000396000f300608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063612032651461007d5780637b95d97d146100db5780637c18e8aa14610106578063b1abaf0d14610147578063d2a79c9c1461019e578063f631c64f146101c9575b600080fd5b34801561008957600080fd5b506100926101f4565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b3480156100e757600080fd5b506100f0610226565b6040518082815260200191505060405180910390f35b34801561011257600080fd5b506101316004803603810190808035906020019092919050505061022c565b6040518082815260200191505060405180910390f35b34801561015357600080fd5b50610188600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610244565b6040518082815260200191505060405180910390f35b3480156101aa57600080fd5b506101b361025c565b6040518082815260200191505060405180910390f35b3480156101d557600080fd5b506101de610262565b6040518082815260200191505060405180910390f35b60008060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154905082565b60035481565b60056020528060005260406000206000915090505481565b60066020528060005260406000206000915090505481565b60025481565b600454815600a165627a7a72305820548d14378a81021e4e0656e3100ba11c45e4a23db8bb91671cf02455a3e302f00029",
+  "deployedBytecode": "0x608060405260043610610078576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063612032651461007d5780637b95d97d146100db5780637c18e8aa14610106578063b1abaf0d14610147578063d2a79c9c1461019e578063f631c64f146101c9575b600080fd5b34801561008957600080fd5b506100926101f4565b604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019250505060405180910390f35b3480156100e757600080fd5b506100f0610226565b6040518082815260200191505060405180910390f35b34801561011257600080fd5b506101316004803603810190808035906020019092919050505061022c565b6040518082815260200191505060405180910390f35b34801561015357600080fd5b50610188600480360381019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190505050610244565b6040518082815260200191505060405180910390f35b3480156101aa57600080fd5b506101b361025c565b6040518082815260200191505060405180910390f35b3480156101d557600080fd5b506101de610262565b6040518082815260200191505060405180910390f35b60008060000160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff16908060010154905082565b60035481565b60056020528060005260406000206000915090505481565b60066020528060005260406000206000915090505481565b60025481565b600454815600a165627a7a72305820548d14378a81021e4e0656e3100ba11c45e4a23db8bb91671cf02455a3e302f00029",
+  "sourceMap": "25:434:0:-;;;364:91;8:9:-1;5:2;;;30:1;27;20:12;5:2;364:91:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;417:34;;;;;;;;;427:10;417:34;;;;;;439:11;417:34;;;405:9;:46;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;364:91;25:434;;;;;;",
+  "deployedSourceMap": "25:434:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;166:26;;8:9:-1;5:2;;;30:1;27;20:12;5:2;166:26:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;221:24;;8:9:-1;5:2;;;30:1;27;20:12;5:2;221:24:0;;;;;;;;;;;;;;;;;;;;;;;272:44;;8:9:-1;5:2;;;30:1;27;20:12;5:2;272:44:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;319:41;;8:9:-1;5:2;;;30:1;27;20:12;5:2;319:41:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;196:22;;8:9:-1;5:2;;;30:1;27;20:12;5:2;196:22:0;;;;;;;;;;;;;;;;;;;;;;;248:21;;8:9:-1;5:2;;;30:1;27;20:12;5:2;248:21:0;;;;;;;;;;;;;;;;;;;;;;;166:26;;;;;;;;;;;;;;;;;;;;;;;:::o;221:24::-;;;;:::o;272:44::-;;;;;;;;;;;;;;;;;:::o;319:41::-;;;;;;;;;;;;;;;;;:::o;196:22::-;;;;:::o;248:21::-;;;;:::o",
+  "source": "pragma solidity 0.4.24;\n\ncontract BetAgreement {\n\t// Defines a type representing the organizer of the bet\n\tstruct Organizer {\n\t\taddress adr;\n\t\tuint commission;\n\t}\n\t\n\tOrganizer public organizer; \n\tuint public max_people;\n\tuint public people_count;\n\tuint public bet_price;\n\tmapping (uint => uint) public position_price;\n\tmapping (address =>  uint) public bet_log;\n\n\tconstructor(uint _commission) public {\n\t\torganizer = Organizer(msg.sender, _commission);\n\t}\n\t\n}\n",
+  "sourcePath": "/Users/febg/Documents/Blockchain/git/Harvest-Season-Betting-Service/Bet-Agreement/contracts/Bet-Agreement.sol",
+  "ast": {
+    "absolutePath": "/Users/febg/Documents/Blockchain/git/Harvest-Season-Betting-Service/Bet-Agreement/contracts/Bet-Agreement.sol",
+    "exportedSymbols": {
+      "BetAgreement": [
+        37
+      ]
+    },
+    "id": 38,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 37,
+        "linearizedBaseContracts": [
+          37
+        ],
+        "name": "BetAgreement",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "BetAgreement.Organizer",
+            "id": 6,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "name": "adr",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "128:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "128:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "name": "commission",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "143:15:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "143:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Organizer",
+            "nodeType": "StructDefinition",
+            "scope": 37,
+            "src": "107:55:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 8,
+            "name": "organizer",
+            "nodeType": "VariableDeclaration",
+            "scope": 37,
+            "src": "166:26:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Organizer_$6_storage",
+              "typeString": "struct BetAgreement.Organizer"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 7,
+              "name": "Organizer",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6,
+              "src": "166:9:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Organizer_$6_storage_ptr",
+                "typeString": "struct BetAgreement.Organizer"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 10,
+            "name": "max_people",
+            "nodeType": "VariableDeclaration",
+            "scope": 37,
+            "src": "196:22:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 9,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "196:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 12,
+            "name": "people_count",
+            "nodeType": "VariableDeclaration",
+            "scope": 37,
+            "src": "221:24:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 11,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "221:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 14,
+            "name": "bet_price",
+            "nodeType": "VariableDeclaration",
+            "scope": 37,
+            "src": "248:21:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 13,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "248:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 18,
+            "name": "position_price",
+            "nodeType": "VariableDeclaration",
+            "scope": 37,
+            "src": "272:44:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+              "typeString": "mapping(uint256 => uint256)"
+            },
+            "typeName": {
+              "id": 17,
+              "keyType": {
+                "id": 15,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "281:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "272:22:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+                "typeString": "mapping(uint256 => uint256)"
+              },
+              "valueType": {
+                "id": 16,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "289:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 22,
+            "name": "bet_log",
+            "nodeType": "VariableDeclaration",
+            "scope": 37,
+            "src": "319:41:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 21,
+              "keyType": {
+                "id": 19,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "328:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "319:26:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 20,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "340:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 35,
+              "nodeType": "Block",
+              "src": "401:54:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 33,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 27,
+                      "name": "organizer",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8,
+                      "src": "405:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Organizer_$6_storage",
+                        "typeString": "struct BetAgreement.Organizer storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 29,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 52,
+                            "src": "427:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 30,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "427:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 31,
+                          "name": "_commission",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 24,
+                          "src": "439:11:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 28,
+                        "name": "Organizer",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6,
+                        "src": "417:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Organizer_$6_storage_ptr_$",
+                          "typeString": "type(struct BetAgreement.Organizer storage pointer)"
+                        }
+                      },
+                      "id": 32,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "417:34:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Organizer_$6_memory",
+                        "typeString": "struct BetAgreement.Organizer memory"
+                      }
+                    },
+                    "src": "405:46:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Organizer_$6_storage",
+                      "typeString": "struct BetAgreement.Organizer storage ref"
+                    }
+                  },
+                  "id": 34,
+                  "nodeType": "ExpressionStatement",
+                  "src": "405:46:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 36,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 25,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 24,
+                  "name": "_commission",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 36,
+                  "src": "376:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 23,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "375:18:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 26,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "401:0:0"
+            },
+            "scope": 37,
+            "src": "364:91:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 38,
+        "src": "25:434:0"
+      }
+    ],
+    "src": "0:460:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/febg/Documents/Blockchain/git/Harvest-Season-Betting-Service/Bet-Agreement/contracts/Bet-Agreement.sol",
+    "exportedSymbols": {
+      "BetAgreement": [
+        37
+      ]
+    },
+    "id": 38,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 37,
+        "linearizedBaseContracts": [
+          37
+        ],
+        "name": "BetAgreement",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "BetAgreement.Organizer",
+            "id": 6,
+            "members": [
+              {
+                "constant": false,
+                "id": 3,
+                "name": "adr",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "128:11:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 2,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "128:7:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 5,
+                "name": "commission",
+                "nodeType": "VariableDeclaration",
+                "scope": 6,
+                "src": "143:15:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 4,
+                  "name": "uint",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "143:4:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "Organizer",
+            "nodeType": "StructDefinition",
+            "scope": 37,
+            "src": "107:55:0",
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 8,
+            "name": "organizer",
+            "nodeType": "VariableDeclaration",
+            "scope": 37,
+            "src": "166:26:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_struct$_Organizer_$6_storage",
+              "typeString": "struct BetAgreement.Organizer"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 7,
+              "name": "Organizer",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 6,
+              "src": "166:9:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_struct$_Organizer_$6_storage_ptr",
+                "typeString": "struct BetAgreement.Organizer"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 10,
+            "name": "max_people",
+            "nodeType": "VariableDeclaration",
+            "scope": 37,
+            "src": "196:22:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 9,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "196:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 12,
+            "name": "people_count",
+            "nodeType": "VariableDeclaration",
+            "scope": 37,
+            "src": "221:24:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 11,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "221:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 14,
+            "name": "bet_price",
+            "nodeType": "VariableDeclaration",
+            "scope": 37,
+            "src": "248:21:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 13,
+              "name": "uint",
+              "nodeType": "ElementaryTypeName",
+              "src": "248:4:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 18,
+            "name": "position_price",
+            "nodeType": "VariableDeclaration",
+            "scope": 37,
+            "src": "272:44:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+              "typeString": "mapping(uint256 => uint256)"
+            },
+            "typeName": {
+              "id": 17,
+              "keyType": {
+                "id": 15,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "281:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "272:22:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_uint256_$",
+                "typeString": "mapping(uint256 => uint256)"
+              },
+              "valueType": {
+                "id": 16,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "289:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "constant": false,
+            "id": 22,
+            "name": "bet_log",
+            "nodeType": "VariableDeclaration",
+            "scope": 37,
+            "src": "319:41:0",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+              "typeString": "mapping(address => uint256)"
+            },
+            "typeName": {
+              "id": 21,
+              "keyType": {
+                "id": 19,
+                "name": "address",
+                "nodeType": "ElementaryTypeName",
+                "src": "328:7:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                }
+              },
+              "nodeType": "Mapping",
+              "src": "319:26:0",
+              "typeDescriptions": {
+                "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
+                "typeString": "mapping(address => uint256)"
+              },
+              "valueType": {
+                "id": 20,
+                "name": "uint",
+                "nodeType": "ElementaryTypeName",
+                "src": "340:4:0",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                }
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 35,
+              "nodeType": "Block",
+              "src": "401:54:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 33,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 27,
+                      "name": "organizer",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 8,
+                      "src": "405:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Organizer_$6_storage",
+                        "typeString": "struct BetAgreement.Organizer storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "arguments": [
+                        {
+                          "argumentTypes": null,
+                          "expression": {
+                            "argumentTypes": null,
+                            "id": 29,
+                            "name": "msg",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 52,
+                            "src": "427:3:0",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_magic_message",
+                              "typeString": "msg"
+                            }
+                          },
+                          "id": 30,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "memberName": "sender",
+                          "nodeType": "MemberAccess",
+                          "referencedDeclaration": null,
+                          "src": "427:10:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        {
+                          "argumentTypes": null,
+                          "id": 31,
+                          "name": "_commission",
+                          "nodeType": "Identifier",
+                          "overloadedDeclarations": [],
+                          "referencedDeclaration": 24,
+                          "src": "439:11:0",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        }
+                      ],
+                      "expression": {
+                        "argumentTypes": [
+                          {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          },
+                          {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        ],
+                        "id": 28,
+                        "name": "Organizer",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 6,
+                        "src": "417:9:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_type$_t_struct$_Organizer_$6_storage_ptr_$",
+                          "typeString": "type(struct BetAgreement.Organizer storage pointer)"
+                        }
+                      },
+                      "id": 32,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": false,
+                      "kind": "structConstructorCall",
+                      "lValueRequested": false,
+                      "names": [],
+                      "nodeType": "FunctionCall",
+                      "src": "417:34:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_Organizer_$6_memory",
+                        "typeString": "struct BetAgreement.Organizer memory"
+                      }
+                    },
+                    "src": "405:46:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_Organizer_$6_storage",
+                      "typeString": "struct BetAgreement.Organizer storage ref"
+                    }
+                  },
+                  "id": 34,
+                  "nodeType": "ExpressionStatement",
+                  "src": "405:46:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 36,
+            "implemented": true,
+            "isConstructor": true,
+            "isDeclaredConst": false,
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 25,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 24,
+                  "name": "_commission",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 36,
+                  "src": "376:16:0",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 23,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "376:4:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "375:18:0"
+            },
+            "payable": false,
+            "returnParameters": {
+              "id": 26,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "401:0:0"
+            },
+            "scope": 37,
+            "src": "364:91:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 38,
+        "src": "25:434:0"
+      }
+    ],
+    "src": "0:460:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {
+    "1529179029750": {
+      "events": {},
+      "links": {},
+      "address": "0x4d409b80d6e0256db5b06fcfcb2043b4a1652815",
+      "transactionHash": "0xaf6aa0312f861b4865d7a7d92ac3dfbd5327f8ffe2d6bf2bef94c0244477abe0"
+    },
+    "1529196304836": {
+      "events": {},
+      "links": {},
+      "address": "0x75b917a6d2d77195ebe764f84eddd37c5cc8a92a",
+      "transactionHash": "0x5c4a0d19fa2280941dbfe2c19d33e96c805a92cc96d438a50539ef59e433ecf0"
+    },
+    "1529196445932": {
+      "events": {},
+      "links": {},
+      "address": "0x25f760bb2276cd765b151d23dd5582bd441ee291",
+      "transactionHash": "0x5c4a0d19fa2280941dbfe2c19d33e96c805a92cc96d438a50539ef59e433ecf0"
+    }
+  },
+  "schemaVersion": "2.0.0",
+  "updatedAt": "2018-06-17T00:48:04.460Z"
+}
